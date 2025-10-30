@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.terminal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 200, 255, 0.2) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    z-index: 1;
+}
+
+.terminal {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.btn.close { background: #ef4444; }
+.btn.minimize { background: #f59e0b; }
+.btn.maximize { background: #10b981; }
+
+.terminal-title {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.terminal-line {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prompt {
+    color: #10b981;
+    font-weight: 500;
+}
+
+.command {
+    color: #60a5fa;
+}
+
+.output {
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-indicator {
+    color: #10b981;
+    font-size: 1.2rem;
+}
+
+.status-text {
+    color: #fbbf24;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .terminal-body {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .terminal-title {
+        font-size: 0.75rem;
+    }
+    
+    .terminal-line {
+        flex-wrap: wrap;
+    }
+    
+    .command {
+        word-break: break-all;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-header {
+        padding: 0.5rem;
+    }
+    
+    .btn {
+        width: 10px;
+        height: 10px;
+    }
+    
+    h1 {
+        font-size: 1.25rem;
+    }
+    
+    .role {
+        font-size: 0.875rem;
+    }
+}
