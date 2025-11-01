@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Функция открытия модального окна
     function openModal(modal) {
-        modal.style.display = 'flex';
         // Небольшая задержка для плавной анимации
         setTimeout(() => {
             modal.classList.add('show');
@@ -58,10 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Функция закрытия модального окна
     function closeModal(modal) {
         modal.classList.remove('show');
-        // Ждем завершения анимации перед скрытием
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 300);
         // Разблокируем скролл страницы
         document.body.style.overflow = 'auto';
     }
