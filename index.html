@@ -8,7 +8,7 @@
     <meta name="keywords" content="Сергей Мельников, Software Engineer, Swag">
     <meta name="author" content="Сергей Мельников">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#1a1a1a">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -25,9 +25,7 @@
     <meta property="twitter:image" content="https://melniknow.ru/resources/favicon.png">
     
     <link rel="icon" type="image/png" href="resources/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts.css">
     <link rel="stylesheet" href="src/style.css">
     
     <!-- JSON-LD structured data -->
@@ -42,36 +40,62 @@
     </script>
 </head>
 <body>
-    <div class="terminal-bg"></div>
     <main class="container">
-        <div class="terminal">
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="btn close"></span>
-                    <span class="btn minimize"></span>
-                    <span class="btn maximize"></span>
+        <!-- Блок с информацией обо мне -->
+        <section class="profile">
+            <div class="profile-left">
+                <div class="profile-photo">
+                    <img src="resources/me.jpg" alt="Сергей Мельников">
                 </div>
-                <div class="terminal-title">sergey@melniknow:~$</div>
-            </div>
-            <div class="terminal-body">
-                <div class="terminal-line">
-                    <span class="prompt">sergey@melniknow:~$</span>
-                    <span class="command">whoami</span>
-                </div>
-                <div class="output">
-                    <h1>Сергей Мельников</h1>
-                    <p class="role">Swagman, Software Engineer, etc.</p>
-                </div>
-                <div class="terminal-line">
-                    <span class="prompt">sergey@melniknow:~$</span>
-                    <span class="command">cat status.txt</span>
-                </div>
-                <div class="output status">
-                    <span class="status-indicator">●</span>
-                    <span class="status-text">Website under development...</span>
+                <div class="contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">Телеграм:</span>
+                        <a href="https://t.me/melniknow" target="_blank">@melniknow</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">ВК:</span>
+                        <a href="https://vk.com/melniknow" target="_blank">@melniknow</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Почта:</span>
+                        <a href="mailto:smelnikow2@yandex.ru">smelnikow2@yandex.ru</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="profile-info">
+                <h1>Мельников Сергей</h1>
+                <p class="description">Software Engineer, создаю цифровые решения и изучаю новые технологии</p>
+                <ul class="facts">
+                    <li>КМС по жиму лёжа</li>
+                    <li>Любитель горных походов</li>
+                    <li>Коллекционирую винтажные </li>
+                    <li>Любитель горных походов</li>
+                    <li>горных походов</li>
+                    <li>Любитель горных походов</li>
+                    <li>Любитель горных походов</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Блок с проектами -->
+        <section class="projects">
+            <h2>Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card" style="background-image: url('resources/development.jpg')">
+                    <h3>Разработка</h3>
+                </div>
+                <div class="project-card" style="background-image: url('resources/adventures.jpg')">
+                    <h3>Приключения</h3>
+                </div>
+                <div class="project-card coming-soon">
+                    <h3>Скоро...</h3>
+                </div>
+                <div class="project-card coming-soon">
+                    <h3>Скоро...</h3>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
