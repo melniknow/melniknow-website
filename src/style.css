@@ -24,6 +24,7 @@
     /* Границы и тени */
     --border-light: rgba(255, 255, 255, 0.1);
     --border-dashed: #718096;
+    --border-dark: #2e486f;
     --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
     --shadow-project: 0 15px 35px rgba(0, 0, 0, 0.4);
     --shadow-project-hover: 0 25px 50px rgba(0, 0, 0, 0.6);
@@ -214,7 +215,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: var(--shadow-project);
-    border: 1px solid var(--border-light);
+    border: 1px solid var(--border-dark);
 }
 
 .project-card:hover {
@@ -267,16 +268,33 @@ body {
     }
     
     .profile {
-        flex-direction: column;
-        text-align: center;
+        display: grid;
+        grid-template-areas: 
+            "photo"
+            "info"
+            "contacts";
         gap: 2rem;
         margin-bottom: 4rem;
         padding: 2rem;
+        text-align: center;
     }
     
     .profile-left {
-        gap: 1.5rem;
-        align-items: center;
+        display: contents;
+    }
+    
+    .profile-photo {
+        grid-area: photo;
+        justify-self: center;
+    }
+    
+    .profile-info {
+        grid-area: info;
+    }
+    
+    .contacts {
+        grid-area: contacts;
+        justify-self: center;
         align-self: center;
     }
     
