@@ -349,3 +349,120 @@ body {
         font-size: 2rem;
     }
 }
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-card);
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--accent-primary);
+}
+
+.modal h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-body p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.modal-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body li {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    padding-left: 0;
+}
+
+/* Курсор для кликабельных карточек */
+.project-card:not(.coming-soon) {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:not(.coming-soon):hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Адаптивность модальных окон */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+        max-height: 85vh;
+    }
+    
+    .modal h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-close {
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+}

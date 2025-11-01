@@ -81,10 +81,10 @@
         <section class="projects">
             <h2>Проекты</h2>
             <div class="projects-grid">
-                <div class="project-card" style="background-image: url('resources/development.jpg')">
+                <div class="project-card" style="background-image: url('resources/development.jpg')" data-modal="development">
                     <h3>Разработка</h3>
                 </div>
-                <div class="project-card" style="background-image: url('resources/swag.jpg')">
+                <div class="project-card" style="background-image: url('resources/swag.jpg')" data-modal="swag">
                     <h3>Swag</h3>
                 </div>
                 <div class="project-card coming-soon">
@@ -96,5 +96,40 @@
             </div>
         </section>
     </main>
+
+    <!-- Модальные окна -->
+    <div id="modal-development" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Разработка</h2>
+            <div class="modal-body">
+                <p>Здесь будет подробное описание проектов по разработке.</p>
+                <ul>
+                    <li>🚀 Веб-приложения на современных технологиях</li>
+                    <li>💻 Автоматизация бизнес-процессов</li>
+                    <li>🔧 Интеграция с внешними API</li>
+                    <li>📱 Адаптивные интерфейсы</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-swag" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Swag</h2>
+            <div class="modal-body">
+                <p>Коллекция стильных проектов и экспериментов.</p>
+                <ul>
+                    <li>🎨 Креативные дизайн-решения</li>
+                    <li>✨ Интерактивные анимации</li>
+                    <li>🎯 Экспериментальные интерфейсы</li>
+                    <li>🔥 Инновационные подходы</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
