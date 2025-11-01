@@ -448,7 +448,7 @@ body {
 .modal-link {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--border-light);
@@ -512,6 +512,40 @@ body {
     transform: scale(1.1);
     opacity: 0.9;
     box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+
+.icon-png-red {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border-radius: 50%;
+    padding: 0.4rem;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+.modal-link:hover .icon-png-red {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.icon-png-light-orange {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: linear-gradient(135deg, #fb923c, #f97316);
+    border-radius: 50%;
+    padding: 0.4rem;
+    box-shadow: 0 2px 8px rgba(251, 146, 60, 0.3);
+}
+
+.modal-link:hover .icon-png-light-orange {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(251, 146, 60, 0.4);
 }
 
 .modal-link-content h3 {
