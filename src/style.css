@@ -467,6 +467,22 @@ body {
 .modal-link-icon {
     font-size: 2rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.modal-link:hover .icon-svg {
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 }
 
 .modal-link-content h3 {
