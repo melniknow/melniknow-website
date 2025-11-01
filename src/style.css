@@ -485,6 +485,35 @@ body {
     filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 }
 
+.icon-png {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-link:hover .icon-png {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.icon-png-green {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border-radius: 50%;
+    padding: 0.4rem;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+.modal-link:hover .icon-png-green {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+
 .modal-link-content h3 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -507,6 +536,32 @@ body {
 
 .project-card:not(.coming-soon):hover {
     transform: translateY(-5px) scale(1.02);
+}
+
+/* Стилизация скроллбара для модальных окон */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Для Firefox */
+.modal-content {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 }
 
 /* Адаптивность модальных окон */
