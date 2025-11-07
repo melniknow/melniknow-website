@@ -382,6 +382,10 @@ body {
     visibility: visible;
 }
 
+.modal:not(.show) .modal-link {
+    pointer-events: none;
+}
+
 .modal-content {
     background: var(--bg-card);
     backdrop-filter: blur(10px);
