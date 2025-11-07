@@ -350,7 +350,10 @@ body {
         padding-bottom: 2rem;
     }
     
-    
+    .facts {
+        text-align: left;
+    }
+
     .projects h2 {
         font-size: 2rem;
     }
