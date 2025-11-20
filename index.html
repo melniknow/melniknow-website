@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сергей Мельников | Личный сайт</title>
+    <meta name="description" content="Сергей Мельников | Личный сайт">
+    <meta name="keywords" content="Сергей Мельников">
+    <meta name="author" content="Сергей Мельников">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://melniknow.ru/">
+    <meta property="og:title" content="Сергей Мельников">
+    <meta property="og:description" content="Сергей Мельников | Личный сайт">
+    <meta property="og:image" content="https://melniknow.ru/resources/me.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Сергей Мельников">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://melniknow.ru/">
+    <meta property="twitter:title" content="Сергей Мельников">
+    <meta property="twitter:description" content="Сергей Мельников | Личный сайт">
+    <meta property="twitter:image" content="https://melniknow.ru/resources/me.jpg">
+    <meta name="twitter:image:alt" content="Сергей Мельников">
+
+    <!-- Legacy Facebook image tag -->
+    <link rel="image_src" href="https://melniknow.ru/resources/me.jpg">
+
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Сергей Мельников",
+      "url": "https://melniknow.ru/",
+      "image": "https://melniknow.ru/resources/me.jpg",
+      "sameAs": []
+    }
+    </script>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Блок с информацией обо мне -->
+        <section class="profile">
+            <div class="profile-left">
+                <div class="profile-photo">
+                    <img src="resources/me.jpg" alt="Сергей Мельников">
+                </div>
+                <div class="contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">Телеграм:</span>
+                        <a href="https://t.me/melniknow" target="_blank">@melniknow</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">ВК:</span>
+                        <a href="https://vk.com/melniknow" target="_blank">@melniknow</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Почта:</span>
+                        <a href="mailto:smelnikow2@yandex.ru">smelnikow2@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1>Сергей Мельников</h1>
+                <p class="description">Java разработчик</p>
+                <ul class="facts">
+                    <li>Бакалавр компьютерных наук</li>
+                    <li>Любитель интересных походов</li>
+                    <li>КМС в жиме лежа</li>
+                    <li><i>Профессионал</i> free solo</li>
+                    <li>Бывалый стартапер</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Блок с проектами -->
+        <section class="projects">
+            <div class="projects-grid">
+                <div class="project-card" style="background-image: url('resources/development.jpg')"
+                    data-modal="development">
+                    <h3>Разработка</h3>
+                </div>
+                <div class="project-card" style="background-image: url('resources/expeditions.jpg')" data-modal="expeditions">
+                    <h3>Походы</h3>
+                </div>
+                <div class="project-card coming-soon">
+                    <h3>Скоро...</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальные окна -->
+    <div id="modal-development" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Разработка</h2>
+            <div class="modal-body">
+                <p>Проекты и опыт в области разработки программного обеспечения</p>
+                <div class="modal-links">
+                    <a href="https://github.com/melniknow" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/github-logo.svg" alt="GitHub" class="icon-svg">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>GitHub</h3>
+                            <p>Мои проекты и код на GitHub</p>
+                        </div>
+                    </a>
+                    <a href="https://omsk.hh.ru/resume/76bee337ff09ab84250039ed1f536868674871" target="_blank"
+                        class="modal-link">
+                        <span class="modal-link-icon">📄</span>
+                        <div class="modal-link-content">
+                            <h3>Резюме</h3>
+                            <p>Подробная информация о моем опыте</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-expeditions" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Походы</h2>
+            <div class="modal-body">
+                <p>И прочее веселье</p>
+                <div class="modal-links">
+                    <a href="https://disk.yandex.ru/d/v3sZY_5kXWaAQg" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-green">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Онгудайский район</h3>
+                            <p>Ноябрь 2025</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/aB_qBqkBoS0BgA" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-light-orange">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Мульта</h3>
+                            <p>Июль 2025</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/Ge7Bme0K1Mm4sg" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-red">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Зимний поход 3</h3>
+                            <p>Декабрь 2024</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/W_p75_6lnfgGgg" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-green">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Азово</h3>
+                            <p>Сентябрь 2023</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/NTtHxz43Aw2PKQ" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-light-orange">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Лесное</h3>
+                            <p>Август 2023</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/NtzkBE0acSfESA" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-red">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Чернолучье</h3>
+                            <p>Май 2023</p>
+                        </div>
+                    </a>
+                    <a href="https://disk.yandex.ru/d/Jgij7JezEiATLA" target="_blank" class="modal-link">
+                        <span class="modal-link-icon">
+                            <img src="resources/wolf.png" alt="Wolf" class="icon-png-green">
+                        </span>
+                        <div class="modal-link-content">
+                            <h3>Зимний поход 1</h3>
+                            <p>Февраль 2023</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+
+</body>
+</html>
